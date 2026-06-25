@@ -6,8 +6,8 @@ Used by `FxPandaa/flowvid-libmpv-windows` to build the **LGPL** `libmpv-2.dll` b
 ## Pinned (behaviour-defining headline components)
 | Component | Pin | Why |
 |-----------|-----|-----|
-| **mpv**    | `v0.41.0` | The player. Pinned for reproducible playback behaviour. Fallback (proven-buildable master): `2339eb72767517fc5a113283939f59076946fbc1`. |
-| **FFmpeg** | `n8.0`    | Decoder/demuxer core. Pinned to match **FlowVidTV** (ffmpeg n8.0) for cross-platform parity. |
+| **mpv**    | `2339eb72767517fc5a113283939f59076946fbc1` | master ~v0.41.0. Proven-buildable with this recipe + current deps (== zhongfly's 2026-06-25 release). |
+| **FFmpeg** | `b5ef72c16b697bb22b6ec979f58a1af0cc03b140` | master 8.x. **Release tags don't work**: the recipe floats its deps to latest, and an older ffmpeg release fails to compile against them (n8.0 → `libsvtav1` `enable_adaptive_quantization` API drift). So we pin a recent master SHA the recipe actually builds. |
 
 ## Intentionally rolling (do NOT naively pin)
 The remaining deps (libplacebo, dav1d, libass, freetype, fribidi, harfbuzz, zlib, libpng, …) have **no

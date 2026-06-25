@@ -25,7 +25,7 @@ ExternalProject_Add(mpv
         subrandr
         libsixel
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
-    GIT_TAG v0.41.0  # FlowVid pin (reproducible). Fallback if build breaks: master 2339eb72767517fc5a113283939f59076946fbc1
+    GIT_TAG 2339eb72767517fc5a113283939f59076946fbc1  # FlowVid pin: mpv master (~v0.41.0), proven-buildable with this recipe + latest deps
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

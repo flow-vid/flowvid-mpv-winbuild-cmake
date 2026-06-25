@@ -47,7 +47,7 @@ ExternalProject_Add(ffmpeg
         libva
         openal-soft
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
-    GIT_TAG n8.0  # FlowVid pin (reproducible; matches FlowVidTV ffmpeg n8.0)
+    GIT_TAG b5ef72c16b697bb22b6ec979f58a1af0cc03b140  # FlowVid pin: ffmpeg master 8.x. (n8.0 release failed: libsvtav1 API drift vs floating-latest dep)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !tests/ref/fate"
