@@ -1,7 +1,12 @@
-> ## FlowVid fork — libmpv Windows build **RECIPE**
-> Pinned dependencies (mpv `2339eb72`, ffmpeg `b5ef72c` — see **[VERSIONS.md](VERSIONS.md)**) for FlowVid's
+> ## FlowVid fork: libmpv Windows build recipe
+> Pinned headline dependencies (mpv `2339eb72`, FFmpeg `b5ef72c`; see **[VERSIONS.md](VERSIONS.md)**) for FlowVid's
 > own LGPL libmpv build. Consumed by the CI in **[flow-vid/flowvid-libmpv-desktop](https://github.com/flow-vid/flowvid-libmpv-desktop)**,
-> which produces the `libmpv-2.dll` bundled in FlowVid PC. Fork of `shinchiro/mpv-winbuild-cmake` — only the dep pins differ.
+> which produces the `libmpv-2.dll` bundled in FlowVid PC. This is a fork of `shinchiro/mpv-winbuild-cmake`.
+
+This repository intentionally does not publish artifacts itself. Its inherited upstream workflows
+were removed because they targeted upstream SourceForge, release and gist accounts. FlowVid checks
+out this recipe at an exact commit and performs all builds and releases in
+`flowvid-libmpv-desktop`.
 
 
 # CMake-based MinGW-w64 Cross Toolchain

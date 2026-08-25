@@ -1,7 +1,8 @@
-# FlowVid libmpv (Windows) — pinned versions
+# FlowVid libmpv (Windows) pinned versions
 
-Reproducibility manifest for `FxPandaa/flowvid-mpv-winbuild-cmake` (fork of `shinchiro/mpv-winbuild-cmake`).
-Used by `FxPandaa/flowvid-libmpv-windows` to build the **LGPL** `libmpv-2.dll` bundled in FlowVidPC.
+Reproducibility manifest for `flow-vid/flowvid-mpv-winbuild-cmake` (fork of
+`shinchiro/mpv-winbuild-cmake`). Used by `flow-vid/flowvid-libmpv-desktop` to build the **LGPL**
+`libmpv-2.dll` bundled in FlowVid PC.
 
 ## Pinned (behaviour-defining headline components)
 | Component | Pin | Why |
